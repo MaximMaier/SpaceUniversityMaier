@@ -42,6 +42,20 @@ const routeAbout = [
     },
   },
   {
+    path: 'bugtracker',
+    name: 'aboutBugtracker',
+    components: {
+      default: () => import('@/components/about/Bugtracker.vue'),
+    },
+    meta: {
+      breadcrumbs: [
+        { text: 'Home', to: '/' },
+        { text: 'About', to: '/about' },
+        { text: 'Bugtracker', to: '/about/bugtracker' },
+      ],
+    },
+  },
+  {
     path: 'faq',
     name: 'aboutFaq',
     components: {
