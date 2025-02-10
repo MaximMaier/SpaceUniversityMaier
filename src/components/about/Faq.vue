@@ -16,44 +16,44 @@
     <v-container style="height: calc(100vh - 160px); overflow-y: auto; padding-bottom: 10px;">
       <v-row>
         <v-col cols="12">
-          <h2><strong>What is Space University?</strong></h2>
-          <p>Space University is an online platform providing educational resources and courses related to space science and technology.</p>
+          <h2><strong>Was ist Space University?</strong></h2>
+          <p>Space University ist eine Online-Plattform, die Bildungsressourcen und Kurse im Bereich der Weltraumwissenschaft und -technologie anbietet.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>How can I enroll in a course?</strong></h2>
-          <p>You can enroll in a course by visiting the 'Courses' section, selecting the course you are interested in, and clicking the 'Enroll' button.</p>
+          <h2><strong>Wie kann ich mich für einen Kurs anmelden?</strong></h2>
+          <p>Sie können sich für einen Kurs anmelden, indem Sie den Bereich 'Kurse' besuchen, den Kurs auswählen, an dem Sie interessiert sind, und auf die Schaltfläche 'Anmelden' klicken.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>Are the courses free?</strong></h2>
-          <p>Some courses are free, while others may require a fee. Please check the course details for more information.</p>
+          <h2><strong>Sind die Kurse kostenlos?</strong></h2>
+          <p>Einige Kurse sind kostenlos, während andere eine Gebühr erfordern können. Bitte überprüfen Sie die Kursdetails für weitere Informationen.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>Do I get a certificate after completing a course?</strong></h2>
-          <p>Yes, you will receive a certificate of completion for most courses. Please check the course details for more information.</p>
+          <h2><strong>Erhalte ich ein Zertifikat nach Abschluss eines Kurses?</strong></h2>
+          <p>Ja, Sie erhalten ein Abschlusszertifikat für die meisten Kurse. Bitte überprüfen Sie die Kursdetails für weitere Informationen.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>Can I access the courses offline?</strong></h2>
-          <p>Currently, our courses are only available online. We are working on providing offline access in the future.</p>
+          <h2><strong>Kann ich auf die Kurse offline zugreifen?</strong></h2>
+          <p>Derzeit sind unsere Kurse nur online verfügbar. Wir arbeiten daran, in Zukunft einen Offline-Zugang zu ermöglichen.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>How do I reset my password?</strong></h2>
-          <p>You can reset your password by clicking on the 'Forgot Password' link on the login page and following the instructions.</p>
+          <h2><strong>Wie kann ich mein Passwort zurücksetzen?</strong></h2>
+          <p>Sie können Ihr Passwort zurücksetzen, indem Sie auf der Anmeldeseite auf den Link 'Passwort vergessen' klicken und den Anweisungen folgen.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>How can I contact support?</strong></h2>
-          <p>You can contact our support team by emailing support@spaceuniversity.com or by using the contact form on our website.</p>
+          <h2><strong>Wie kann ich den Support kontaktieren?</strong></h2>
+          <p>Sie können unser Support-Team per E-Mail an support@spaceuniversity.com oder über das Kontaktformular auf unserer Website kontaktieren.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>What is the refund policy?</strong></h2>
-          <p>We offer a 30-day refund policy for most courses. Please check the course details for more information.</p>
+          <h2><strong>Wie ist die Rückerstattungsrichtlinie?</strong></h2>
+          <p>Wir bieten eine 30-tägige Rückerstattungsrichtlinie für die meisten Kurse an. Bitte überprüfen Sie die Kursdetails für weitere Informationen.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>Can I share my course access with others?</strong></h2>
-          <p>No, sharing your course access with others is against our terms of service. Each user must have their own account.</p>
+          <h2><strong>Kann ich meinen Kurszugang mit anderen teilen?</strong></h2>
+          <p>Nein, das Teilen Ihres Kurszugangs mit anderen verstößt gegen unsere Nutzungsbedingungen. Jeder Benutzer muss ein eigenes Konto haben.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>How do I update my profile information?</strong></h2>
-          <p>You can update your profile information by logging into your account and navigating to the 'Profile' section.</p>
+          <h2><strong>Wie kann ich meine Profilinformationen aktualisieren?</strong></h2>
+          <p>Sie können Ihre Profilinformationen aktualisieren, indem Sie sich in Ihr Konto einloggen und zum Bereich 'Profil' navigieren.</p>
         </v-col>
       </v-row>
     </v-container>
