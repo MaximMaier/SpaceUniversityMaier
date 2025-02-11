@@ -28,18 +28,6 @@ export default {
   home: {
     name: 'Start',
   },
-  playground: {
-    name: 'Spielwiese',
-    counter: {
-      name: 'Zähler',
-    },
-    hero: {
-      name: 'Held',
-    },
-    poll: {
-      name: 'Umfrage',
-    },
-  },
   campus: {
     name: 'Campus',
     map: {

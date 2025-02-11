@@ -2,7 +2,6 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import routeAbout from '@/router/routeAbout';
-import routePlayground from '@/router/routePlayground';
 import routeStudy from '@/router/routeStudy';
 import routeCampus from '@/router/routeCampus';
 
@@ -22,12 +21,6 @@ export default new Router({
       name: 'about',
       component: () => import('@/views/About.vue'),
       children: routeAbout,
-    },
-    {
-      path: '/playground',
-      name: 'playground',
-      component: () => import('@/views/Playground.vue'),
-      children: routePlayground,
     },
     {
       path: '/study',

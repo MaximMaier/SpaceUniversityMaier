@@ -70,11 +70,10 @@ export default {
     LanguageButton,
   },
   data: () => ({
-    groups: ['campus', 'study', 'playground', 'about'],
+    groups: ['campus', 'study' , 'about'],
     groupNames: [
       '$vuetify.campus.name',
       '$vuetify.study.name',
-      '$vuetify.playground.name',
       '$vuetify.about.name',
     ],
     roles: [

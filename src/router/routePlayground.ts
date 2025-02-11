@@ -27,7 +27,7 @@ const routePlayground = [
       ],
     },
   },
-  {
+/*   {
     path: 'hero/:id',
     name: 'heroDetails',
     components: {
@@ -44,7 +44,7 @@ const routePlayground = [
         { text: '' },
       ],
     },
-  },
+  }, */
   {
     path: 'poll',
     name: 'poll',

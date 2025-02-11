@@ -28,18 +28,6 @@ export default {
   home: {
     name: 'Home',
   },
-  playground: {
-    name: 'Playground',
-    counter: {
-      name: 'Counter',
-    },
-    hero: {
-      name: 'Hero',
-    },
-    poll: {
-      name: 'Poll',
-    },
-  },
   campus: {
     name: 'Campus',
     map: {

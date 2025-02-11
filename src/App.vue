@@ -21,7 +21,7 @@
                 style="color: inherit; text-decoration: none"
                 to="/"
               >
-                Vue Pochta
+                Space University
               </router-link>
             </v-list-item-title>
           </v-list-item-content>
@@ -86,11 +86,10 @@ export default Vue.extend({
     stores.init();
   },
   data: () => ({
-    groups: ['campus', 'study', 'playground', 'about'],
+    groups: ['campus', 'study', 'about'],
     groupNames: [
       '$vuetify.campus.name',
       '$vuetify.study.name',
-      '$vuetify.playground.name',
       '$vuetify.about.name',
     ],
   }),
