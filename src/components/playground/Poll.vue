@@ -1,99 +1,105 @@
 <template>
-  <div class="poll">
-    <v-container>
-      <v-card width="600">
-        <v-card-title> Polls </v-card-title>
-
-        <v-card-text>
-          <v-list>
-            <span :key="poll.id" v-for="poll of state.polls">
-              <v-divider />
-              <v-list-item :key="poll._id" two-line>
-                <v-list-item-content>
-                  <v-list-item-title>{{ poll.question }}</v-list-item-title>
-                  <span class="mx-4">
-                    <v-list-item-subtitle
-                      :key="answer.text"
-                      v-for="answer of poll.answers"
-                    >
-                      {{ answer.text }} ({{ answer.votes }})
-                    </v-list-item-subtitle>
-                  </span>
-                </v-list-item-content>
-
-                <v-list-item-action>
-                  <span>
-                    <v-btn
-                      :disabled="poll.answers.length === 0 || poll.closed"
-                      :to="'/playground/poll/' + poll._id"
-                      color="primary"
-                      fab
-                      small
-                    >
-                      <v-icon v-if="poll.multipleAnswers">
-                        mdi-checkbox-marked-outline
-                      </v-icon>
-                      <v-icon v-if="!poll.multipleAnswers">
-                        mdi-radiobox-marked
-                      </v-icon>
-                    </v-btn>
-                    <v-btn
-                      :to="'/playground/poll/' + poll._id + '/edit'"
-                      v-if="isTutor()"
-                      color="primary"
-                      icon
-                    >
-                      <v-icon>mdi-pencil</v-icon>
-                    </v-btn>
-                  </span>
-                </v-list-item-action>
-              </v-list-item>
-            </span>
-          </v-list>
-        </v-card-text>
-
-        <v-card-actions>
-          <v-btn v-if="isTutor()" @click="addPoll" outlined>add poll</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-container>
+  <div>
+    <div class="welcome-container">
+      <img src="@/assets/img/logo.png" alt="Logo" class="logo" />
+      <h1>Wilkommen bei der Space University!</h1>
+      <p>Deine Reise zu den Sternen beginnt hier. Bitte logge dich ein oder registriere dich, um fortzufahren.</p>
+    </div>
+    <div class="login-container">
+      <h2>Login</h2>
+      <br/>
+      <form @submit.prevent="handleLogin">
+        <div class="form-group">
+          <label for="email">E-Mail:</label>
+          <input type="email" v-model="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Passwort:</label>
+          <input type="password" v-model="password" required />
+        </div>
+        <div class="form-group">
+            <a href="#" style="color: blue; font-size: 12px;">Passwort vergessen?</a>
+        </div>
+        <button type="submit" style="margin-right: 10px; margin-bottom: 10px;">Login</button>
+        <button type="button" @click="showRegisterPopup = true">Registrieren</button>
+      </form>
+      <RegisterPopup v-if="showRegisterPopup" @close="showRegisterPopup = false" />
+    </div>
   </div>
 </template>
 
 <script>
-import { reactive } from '@vue/composition-api';
-import { pochtaStore } from '@/store/localStorage/pochta-store';
-import { pollStore } from '@/store/pouchDB/poll-store';
+import RegisterPopup from './RegisterPopup.vue';
 
 export default {
-  name: 'Poll',
-  setup() {
-    const state = reactive({
-      polls: [],
-    });
-    const init = () => {
-      pollStore.list('id').then(polls => {
-        state.polls = polls;
-      });
-    };
-    init();
-    const isTutor = () => pochtaStore.role.name === 'tutor';
-    const addPoll = () => {
-      pollStore
-        .add({
-          id: state.polls.length + 1,
-          question: 'What is your question?',
-          answers: [],
-        })
-        .then(() => {
-          init();
-        });
-    };
+  name: 'Login',
+  components: {
+    RegisterPopup
+  },
+  data() {
     return {
-      addPoll,
-      isTutor,
-      state,
+      email: '',
+      password: '',
+      showRegisterPopup: false
     };
   },
+  methods: {
+    handleLogin() {
+      // Handle login logic here
+      console.log('Email:', this.email);
+      console.log('Password:', this.password);
+    }
+  }
 };
 </script>
+
+<style scoped>
+.welcome-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+</style>
