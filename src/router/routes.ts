@@ -10,24 +10,22 @@ const routes = {
       to: '/about/faq',
       icon: 'fa-question-circle',
     },
+    {
+      title: '$vuetify.aboutTutorial.name', // Add this section
+      to: '/about/tutorial',
+      icon: 'fa-book',
+    },
+    {
+      title: '$vuetify.aboutLogin.name', // Add this section
+      to: '/about/login',
+      icon: 'fa-sign-in-alt', // Changed icon to represent login
+    },
   ],
   campus: [
     {
       title: '$vuetify.campus.map.name',
       to: '/campus/map',
       icon: 'fa-map',
-    },
-  ],
-  playground: [
-    {
-      title: '$vuetify.playground.hero.name',
-      to: '/playground/hero',
-      icon: 'fa-user-ninja',
-    },
-    {
-      title: '$vuetify.playground.poll.name',
-      to: '/playground/poll',
-      icon: 'fa-poll',
     },
   ],
   study: [
@@ -37,7 +35,7 @@ const routes = {
       icon: 'fa-book-open',
     },
     {
-      title: '$vuetify.study.timetable.name', // Add this section
+      title: '$vuetify.study.timetable.name',
       to: '/study/timetable',
       icon: 'fa-calendar-alt',
     },

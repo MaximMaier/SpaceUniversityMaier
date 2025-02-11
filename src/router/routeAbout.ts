@@ -1,5 +1,5 @@
 const routeAbout = [
-  {
+/*   {
     path: 'pochta',
     name: 'aboutPochta',
     components: {
@@ -40,7 +40,7 @@ const routeAbout = [
         { text: 'Vuetify', to: '/about/vuetify' },
       ],
     },
-  },
+  }, */
   {
     path: 'bugtracker',
     name: 'aboutBugtracker',
@@ -66,6 +66,34 @@ const routeAbout = [
         { text: 'Home', to: '/' },
         { text: 'About', to: '/about' },
         { text: 'FAQ', to: '/about/faq' },
+      ],
+    },
+  },
+  {
+    path: 'tutorial',
+    name: 'aboutTutorial',
+    components: {
+      default: () => import('@/components/about/Tutorial.vue'),
+    },
+    meta: {
+      breadcrumbs: [
+        { text: 'Home', to: '/' },
+        { text: 'About', to: '/about' },
+        { text: 'Tutorial', to: '/about/tutorial' },
+      ],
+    },
+  },
+  {
+    path: 'login',
+    name: 'aboutLogin',
+    components: {
+      default: () => import('@/components/about/Login.vue'),
+    },
+    meta: {
+      breadcrumbs: [
+        { text: 'Home', to: '/' },
+        { text: 'About', to: '/about' },
+        { text: 'Login', to: '/about/login' },
       ],
     },
   },
