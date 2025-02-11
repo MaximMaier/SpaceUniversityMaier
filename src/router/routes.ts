@@ -1,21 +1,6 @@
 const routes = {
   about: [
     {
-      title: '$vuetify.aboutVuePochta.name',
-      to: '/about/pochta',
-      icon: 'fa-archway',
-    },
-    {
-      title: '$vuetify.aboutVue.name',
-      to: '/about/vue',
-      icon: 'fab fa-vuejs',
-    },
-    {
-      title: '$vuetify.aboutVuetify.name',
-      to: '/about/vuetify',
-      icon: 'fab fa-vine',
-    },
-    {
       title: '$vuetify.aboutBugtracker.name',
       to: '/about/bugtracker',
       icon: 'fa-bug',
@@ -34,11 +19,6 @@ const routes = {
     },
   ],
   playground: [
-    {
-      title: '$vuetify.playground.counter.name',
-      to: '/playground/counter',
-      icon: 'fa-calculator',
-    },
     {
       title: '$vuetify.playground.hero.name',
       to: '/playground/hero',
