@@ -7,7 +7,7 @@
             <p>Wir versuchen Ihr Ticket so schnell wie möglich zu bearbeiten und werden Ihnen dann Rückmeldung geben!</p>
             <p>Bitte geben Sie so viele Details wie möglich an, damit wir das Problem effizient nachvollziehen und beheben können.</p>
             <p>Vielen Dank für Ihre Unterstützung und Ihr Verständnis.</p>
-            <button @click="openPopup">Ticket erstellen</button>
+            <button @click="openPopup" style="background-color: #090091;">Ticket erstellen</button>
         </div>
         <div class="right">
             <h2>Nicht abgeschlossene Tickets</h2>
@@ -80,7 +80,7 @@
                         <label>Ticketnummer:</label>
                         <p>{{ ticketNumber }}</p>
                     </div>
-                    <button type="submit">Ticket abschicken</button>
+                    <button type="submit" style="background-color: #090091; color: white;">Ticket abschicken</button>
                 </form>
             </div>
         </div>

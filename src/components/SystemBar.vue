@@ -1,31 +1,6 @@
 <template>
-  <v-system-bar app dark fixed color="primary" style="height: 28px; padding: 0">
-    <span class="mx-4">Vue Pochta</span>
-
-    <v-btn text tile small to="/">{{
-      $vuetify.lang.t('$vuetify.home.name')
-    }}</v-btn>
-
-    <div class="d-flex align-center">
-      <span :key="group" v-for="(group, index) in groups">
-        <v-menu offset-y>
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn
-              text
-              tile
-              small
-              style="padding-right: 0"
-              v-bind="attrs"
-              v-on="on"
-            >
-              {{ $vuetify.lang.t(groupNames[index]) }}
-              <v-icon v-text="'fa-chevron-down'" />
-            </v-btn>
-          </template>
-          <Navigation :group="group" />
-        </v-menu>
-      </span>
-    </div>
+  <v-system-bar app dark bottom color="primary" style="height: 28px; padding: 0">
+    <span class="mx-4">Space University</span>
 
     <v-spacer />
 

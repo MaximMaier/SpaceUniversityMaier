@@ -3,7 +3,7 @@
     <div class="welcome-container">
       <img src="@/assets/img/logo.png" alt="Logo" class="logo" />
       <h1>Wilkommen bei der Space University!</h1>
-      <p>Deine Reise zu den Sternen beginnt hier. Bitte logge dich ein oder registriere dich, um fortzufahren.</p>
+      <p>Deine Reise zu den Sternen beginnt hier! Bitte logge dich ein oder registriere dich, um fortzufahren.</p>
     </div>
     <div class="login-container">
       <h2>Login</h2>

@@ -1,14 +1,7 @@
 <template>
   <v-app>
-    <SystemBar />
-
-    <v-navigation-drawer
-      :mini-variant="mini"
-      app
-      mini-variant-width="62"
-      permament
-      v-model="drawer"
-    >
+    <v-navigation-drawer :mini-variant="mini" app mini-variant-width="62" permanent v-model="drawer"
+      class="navigation-drawer" style="z-index: 3;">
       <v-list-item>
         <template v-if="!mini">
           <v-list-item-icon>
@@ -16,11 +9,7 @@
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title class="title">
-              <router-link
-                class="sidebar-title"
-                style="color: inherit; text-decoration: none"
-                to="/"
-              >
+              <router-link class="sidebar-title" style="color: inherit; text-decoration: none" to="/">
                 Space University
               </router-link>
             </v-list-item-title>
@@ -32,17 +21,10 @@
         </v-btn>
       </v-list-item>
 
-      <span
-        :key="group"
-        style="margin-top: 56px"
-        v-for="(group, index) of groups"
-      >
+      <span :key="group" style="margin-top: 56px" v-for="(group, index) of groups">
         <v-divider />
-        <v-subheader
-          :class="{ mini }"
-          class="nav-subheader"
-          v-text="shorten($vuetify.lang.t(groupNames[index]).toUpperCase())"
-        />
+        <v-subheader :class="{ mini }" class="nav-subheader"
+          v-text="shorten($vuetify.lang.t(groupNames[index]).toUpperCase())" />
         <Navigation :group="group" :nav="true" />
       </span>
 
@@ -58,29 +40,26 @@
     </v-navigation-drawer>
 
     <v-main>
-      <BreadcrumbBar />
       <router-view />
     </v-main>
+    <FooterBar />
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import { reactive, ref, watch } from '@vue/composition-api';
-import BreadcrumbBar from '@/components/BreadcrumbBar.vue';
 import Navigation from '@/components/Navigation.vue';
-import SystemBar from '@/components/SystemBar.vue';
 import EventDates from '@/components/campus/EventDates.vue';
-
+import FooterBar from '@/components/FooterBar.vue';
 import stores from '@/store/pouchDB/stores';
 
 export default Vue.extend({
   name: 'App',
   components: {
-    BreadcrumbBar,
     EventDates,
     Navigation,
-    SystemBar,
+    FooterBar,
   },
   beforeCreate() {
     stores.init();
@@ -111,8 +90,16 @@ export default Vue.extend({
 </script>
 
 <style>
-html {
-  overflow: hidden;
+html,
+body,
+#app,
+.v-application {
+  height: 100%;
+  margin: 0;
+}
+
+.v-navigation-drawer__content {
+  height: 100vh;
 }
 
 .nav-subheader {
@@ -131,5 +118,13 @@ html {
 
 .sidebar-title:not(:hover) {
   background-color: #ffffff;
+}
+
+.v-footer {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 62px); /* Adjust width to account for the navigation drawer */
+  margin-left: 62px; /* Add left margin */
+  z-index: 1;
 }
 </style>

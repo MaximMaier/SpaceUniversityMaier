@@ -13,7 +13,7 @@ const routes = {
     {
       title: '$vuetify.aboutTutorial.name', // Add this section
       to: '/about/tutorial',
-      icon: 'fa-book',
+      icon: 'fa-info-circle', // Changed icon to information icon
     },
     {
       title: '$vuetify.aboutLogin.name', // Add this section
