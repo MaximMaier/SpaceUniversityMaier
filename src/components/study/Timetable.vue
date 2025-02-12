@@ -23,27 +23,27 @@
                 </tr>
                 <tr>
                     <td><b>09</b>:00</td>
-                    <td class="course" :style="{ backgroundColor: timetable['09:00']['Montag'].color }" @click="openPopup('Mathematik 101', 'Einführung in die Mathematik', 'Raum 101', 'Dr. Müller', '09:00', 'Montag')">{{ timetable['09:00']['Montag'].course }}</td>
+                    <td class="course" :style="{ backgroundColor: timetable['09:00']['Montag'].color }" @click="openPopup('Mathematik 2', 'Einführung in die Mathematik', 'Raum 101', 'Dr. Müller', '09:00', 'Montag')">{{ timetable['09:00']['Montag'].course }}</td>
                     <td :style="{ backgroundColor: timetable['09:00']['Dienstag'].color }" @click="openPopup('', '', '', '', '09:00', 'Dienstag')">{{ timetable['09:00']['Dienstag'].course }}</td>
-                    <td class="course" :style="{ backgroundColor: timetable['09:00']['Mittwoch'].color }" @click="openPopup('Physik 101', 'Grundlagen der Physik', 'Raum 102', 'Dr. Schmidt', '09:00', 'Mittwoch')">{{ timetable['09:00']['Mittwoch'].course }}</td>
+                    <td class="course" :style="{ backgroundColor: timetable['09:00']['Mittwoch'].color }" @click="openPopup('Physik 1', 'Grundlagen der Physik', 'Raum 102', 'Dr. Schmidt', '09:00', 'Mittwoch')">{{ timetable['09:00']['Mittwoch'].course }}</td>
                     <td :style="{ backgroundColor: timetable['09:00']['Donnerstag'].color }" @click="openPopup('', '', '', '', '09:00', 'Donnerstag')">{{ timetable['09:00']['Donnerstag'].course }}</td>
-                    <td class="course" :style="{ backgroundColor: timetable['09:00']['Freitag'].color }" @click="openPopup('Chemie 101', 'Einführung in die Chemie', 'Raum 103', 'Dr. Weber', '09:00', 'Freitag')">{{ timetable['09:00']['Freitag'].course }}</td>
+                    <td class="course" :style="{ backgroundColor: timetable['09:00']['Freitag'].color }" @click="openPopup('Chemie 1', 'Einführung in die Chemie', 'Raum 103', 'Dr. Weber', '09:00', 'Freitag')">{{ timetable['09:00']['Freitag'].course }}</td>
                 </tr>
                 <tr>
                     <td><b>10</b>:00</td>
                     <td :style="{ backgroundColor: timetable['10:00']['Montag'].color }" @click="openPopup('', '', '', '', '10:00', 'Montag')">{{ timetable['10:00']['Montag'].course }}</td>
-                    <td class="course" :style="{ backgroundColor: timetable['10:00']['Dienstag'].color }" @click="openPopup('Mathematik 101', 'Einführung in die Mathematik', 'Raum 101', 'Dr. Müller', '10:00', 'Dienstag')">{{ timetable['10:00']['Dienstag'].course }}</td>
+                    <td class="course" :style="{ backgroundColor: timetable['10:00']['Dienstag'].color }" @click="openPopup('Mathematik 2', 'Einführung in die Mathematik', 'Raum 101', 'Dr. Müller', '10:00', 'Dienstag')">{{ timetable['10:00']['Dienstag'].course }}</td>
                     <td :style="{ backgroundColor: timetable['10:00']['Mittwoch'].color }" @click="openPopup('', '', '', '', '10:00', 'Mittwoch')">{{ timetable['10:00']['Mittwoch'].course }}</td>
-                    <td class="course" :style="{ backgroundColor: timetable['10:00']['Donnerstag'].color }" @click="openPopup('Physik 101', 'Grundlagen der Physik', 'Raum 102', 'Dr. Schmidt', '10:00', 'Donnerstag')">{{ timetable['10:00']['Donnerstag'].course }}</td>
+                    <td class="course" :style="{ backgroundColor: timetable['10:00']['Donnerstag'].color }" @click="openPopup('Physik 1', 'Grundlagen der Physik', 'Raum 102', 'Dr. Schmidt', '10:00', 'Donnerstag')">{{ timetable['10:00']['Donnerstag'].course }}</td>
                     <td @click="openPopup('', '', '', '', '10:00', 'Freitag')">{{ timetable['10:00']['Freitag'].course }}</td>
                 </tr>
                 <tr>
                     <td><b>11</b>:00</td>
                     <td class="course" :style="{ backgroundColor: timetable['11:00']['Montag'].color }" @click="openPopup('Chemie 101', 'Einführung in die Chemie', 'Raum 103', 'Dr. Weber', '11:00', 'Montag')">{{ timetable['11:00']['Montag'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '11:00', 'Dienstag')">{{ timetable['11:00']['Dienstag'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '11:00', 'Mittwoch')">{{ timetable['11:00']['Mittwoch'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['11:00']['Dienstag'].color }" @click="openPopup('Soziologie 3', 'Fortgeschrittene in die Soziologie', 'Raum 107', 'Dr. Eberhardt', '11:00', 'Dienstag')">{{ timetable['11:00']['Dienstag'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['11:00']['Mittwoch'].color }" @click="openPopup('Soziologie 3', 'Fortgeschrittene in die Soziologie', 'Raum 108', 'Eberhardt', '11:00', 'Mittwoch')">{{ timetable['11:00']['Mittwoch'].course }}</td>
                     <td @click="openPopup('', '', '', '', '11:00', 'Donnerstag')">{{ timetable['11:00']['Donnerstag'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '11:00', 'Freitag')">{{ timetable['11:00']['Freitag'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['11:00']['Freitag'].color }" @click="openPopup('Philosophie 101', '', '', '', '11:00', 'Freitag')">{{ timetable['11:00']['Freitag'].course }}</td>
                 </tr>
                 <tr class="greyed-out">
                     <td><b>12</b>:00 🍴</td>
@@ -55,19 +55,19 @@
                 </tr>
                 <tr>
                     <td><b>13</b>:00</td>
-                    <td @click="openPopup('', '', '', '', '13:00', 'Montag')">{{ timetable['13:00']['Montag'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['13:00']['Montag'].color }" @click="openPopup('Physik 1', 'Einführung in die Physik', 'Raum 109', 'Dr. Schmidt', '13:00', 'Montag')">{{ timetable['13:00']['Montag'].course }}</td>
                     <td @click="openPopup('', '', '', '', '13:00', 'Dienstag')">{{ timetable['13:00']['Dienstag'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '13:00', 'Mittwoch')">{{ timetable['13:00']['Mittwoch'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '13:00', 'Donnerstag')">{{ timetable['13:00']['Donnerstag'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '13:00', 'Freitag')">{{ timetable['13:00']['Freitag'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['13:00']['Mittwoch'].color }" @click="openPopup('Musik 101', '', '', '', '13:00', 'Mittwoch')">{{ timetable['13:00']['Mittwoch'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['13:00']['Donnerstag'].color }" @click="openPopup('Sport 101', '', '', '', '13:00', 'Donnerstag')">{{ timetable['13:00']['Donnerstag'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['13:00']['Freitag'].color }" @click="openPopup('Geographie 101', '', '', '', '13:00', 'Freitag')">{{ timetable['13:00']['Freitag'].course }}</td>
                 </tr>
                 <tr>
                     <td><b>14</b>:00</td>
-                    <td @click="openPopup('', '', '', '', '14:00', 'Montag')">{{ timetable['14:00']['Montag'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '14:00', 'Dienstag')">{{ timetable['14:00']['Dienstag'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '14:00', 'Mittwoch')">{{ timetable['14:00']['Mittwoch'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '14:00', 'Donnerstag')">{{ timetable['14:00']['Donnerstag'].course }}</td>
-                    <td @click="openPopup('', '', '', '', '14:00', 'Freitag')">{{ timetable['14:00']['Freitag'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['14:00']['Montag'].color }" @click="openPopup('Physik 1', 'Einführung in die Physik', '', '', '14:00', 'Montag')">{{ timetable['14:00']['Montag'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['14:00']['Dienstag'].color }" @click="openPopup('Soziologie 3', '', '', '', '14:00', 'Dienstag')">{{ timetable['14:00']['Dienstag'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['14:00']['Mittwoch'].color }" @click="openPopup('Politikwissenschaft 101', '', '', '', '14:00', 'Mittwoch')">{{ timetable['14:00']['Mittwoch'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['14:00']['Donnerstag'].color }" @click="openPopup('Wirtschaft 2', '', '', '', '14:00', 'Donnerstag')">{{ timetable['14:00']['Donnerstag'].course }}</td>
+                    <td :style="{ backgroundColor: timetable['14:00']['Freitag'].color }" @click="openPopup('Recht 101', '', '', '', '14:00', 'Freitag')">{{ timetable['14:00']['Freitag'].course }}</td>
                 </tr>
                 <tr>
                     <td><b>15</b>:00</td>
@@ -124,7 +124,7 @@
                             <option value="#ffffff" style="background-color: #ffffff;">Weiß</option>
                         </select>
                     </div>
-                    <button class="confirm-button" @click="saveColor">Farbe speichern</button>
+                    <button class="confirm-button" @click="saveColor">Bestätigen</button>
                     <button class="delete-button" @click="deleteAppointment">Löschen</button>
                 </div>
                 <div v-else>
@@ -168,12 +168,12 @@ export default {
             selectedColor: '#fffacd',
             timetable: {
                 '08:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: '', color: '' } },
-                '09:00': { 'Montag': { course: 'Mathematik 101', color: '#fffacd' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: 'Physik 101', color: '#fffacd' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: 'Chemie 101', color: '#fffacd' } },
-                '10:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: 'Mathematik 101', color: '#fffacd' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: 'Physik 101', color: '#fffacd' }, 'Freitag': { course: '', color: '' } },
-                '11:00': { 'Montag': { course: 'Chemie 101', color: '#fffacd' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: '', color: '' } },
+                '09:00': { 'Montag': { course: 'Mathematik 2', color: '#add8e6' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: 'Physik 1', color: '#ffb6c1' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: 'Chemie 1', color: '#fffacd' } },
+                '10:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: 'Mathematik 2', color: '#add8e6' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: 'Physik 1', color: '#ffb6c1' }, 'Freitag': { course: '', color: '' } },
+                '11:00': { 'Montag': { course: 'Chemie 1', color: '#fffacd' }, 'Dienstag': { course: 'Soziologie 3', color: '#90ee90' }, 'Mittwoch': { course: 'Soziologie 3', color: '#90ee90' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: 'Physik 1', color: '#ffb6c1' } },
                 '12:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: '', color: '' } },
-                '13:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: '', color: '' } },
-                '14:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: '', color: '' } },
+                '13:00': { 'Montag': { course: 'Physik 1', color: '#ffb6c1' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: 'Mathematik 2', color: '#add8e6' }, 'Donnerstag': { course: 'Soziologie 3', color: '#90ee90' }, 'Freitag': { course: 'Physik 1', color: '#ffb6c1' } },
+                '14:00': { 'Montag': { course: 'Physik 1', color: '#ffb6c1' }, 'Dienstag': { course: 'Soziologie 3', color: '#90ee90' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: 'Chemie 1', color: '#fffacd' }, 'Freitag': { course: 'Mathematik 2', color: '#add8e6' } },
                 '15:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: '', color: '' } },
                 '16:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: '', color: '' } },
                 '17:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: '', color: '' } },
@@ -297,14 +297,15 @@ td:hover {
     border: 1px solid grey;
     padding: 5px 10px;
     cursor: pointer;
-    background-color: white;
+    background-color: #090091;
+    color: white; /* Added text color */
     transition: background-color 0.2s;
     margin-top: 20px; /* Adjusted margin-top */
     margin-right: 10px; /* Added margin-right for spacing */
 }
 
 .confirm-button:hover {
-    background-color: #f2f2f2;
+    background-color: #07034b;
 }
 
 .color-picker {
@@ -321,12 +322,13 @@ td:hover {
     border: 1px solid grey;
     padding: 5px 10px;
     cursor: pointer;
-    background-color: white;
+    background-color: red; /* Changed background color to red */
+    color: white; /* Added text color */
     transition: background-color 0.2s;
     margin-top: 20px; /* Adjusted margin-top to match confirm-button */
 }
 
 .delete-button:hover {
-    background-color: #f2f2f2;
+    background-color: darkred; /* Darker shade for hover */
 }
 </style>

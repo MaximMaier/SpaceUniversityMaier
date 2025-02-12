@@ -85,7 +85,7 @@ export default {
     gap: 10px;
 }
 .role-picker {
-    color: white;
+    color: white !important;
 }
 .logo-container {
     position: absolute;

@@ -123,8 +123,8 @@ body,
 .v-footer {
   position: fixed;
   bottom: 0;
-  width: calc(100% - 62px); /* Adjust width to account for the navigation drawer */
-  margin-left: 62px; /* Add left margin */
+  width: calc(100%); /* Adjust width to account for the navigation drawer */
+  margin-left: 0px; /* Add left margin */
   z-index: 1;
 }
 </style>
