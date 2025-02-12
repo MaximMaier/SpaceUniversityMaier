@@ -11,14 +11,14 @@ const routes = {
       icon: 'fa-question-circle',
     },
     {
-      title: '$vuetify.aboutTutorial.name', // Add this section
+      title: '$vuetify.aboutTutorial.name',
       to: '/about/tutorial',
-      icon: 'fa-info-circle', // Changed icon to information icon
+      icon: 'fa-info-circle',
     },
     {
-      title: '$vuetify.aboutLogin.name', // Add this section
+      title: '$vuetify.aboutLogin.name',
       to: '/about/login',
-      icon: 'fa-sign-in-alt', // Changed icon to represent login
+      icon: 'fa-sign-in-alt',
     },
   ],
   campus: [

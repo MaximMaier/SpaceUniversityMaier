@@ -16,7 +16,10 @@
     <v-container style="height: calc(100vh - 160px); overflow-y: auto; padding-bottom: 10px;">
       <v-row>
         <v-col cols="12">
-          <h2><strong>Was ist Space University?</strong></h2>
+          <h1>FAQ zur Website der Space University</h1>
+        </v-col>
+        <v-col cols="12">
+          <h2><strong>Was ist die Space University?</strong></h2>
           <p>Space University ist eine Online-Plattform, die Bildungsressourcen und Kurse im Bereich der Weltraumwissenschaft und -technologie anbietet.</p>
         </v-col>
         <v-col cols="12">
@@ -24,20 +27,20 @@
           <p>Sie können sich für einen Kurs anmelden, indem Sie den Bereich 'Kurse' besuchen, den Kurs auswählen, an dem Sie interessiert sind, und auf die Schaltfläche 'Anmelden' klicken.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>Sind die Kurse kostenlos?</strong></h2>
-          <p>Einige Kurse sind kostenlos, während andere eine Gebühr erfordern können. Bitte überprüfen Sie die Kursdetails für weitere Informationen.</p>
-        </v-col>
-        <v-col cols="12">
           <h2><strong>Erhalte ich ein Zertifikat nach Abschluss eines Kurses?</strong></h2>
-          <p>Ja, Sie erhalten ein Abschlusszertifikat für die meisten Kurse. Bitte überprüfen Sie die Kursdetails für weitere Informationen.</p>
+          <p>Ja, Sie erhalten ein Abschlusszertifikat für die meisten Kurse. Bitte sprechen Sie mit den jeweiligen Dozenten für weitere Informationen.</p>
         </v-col>
         <v-col cols="12">
-          <h2><strong>Kann ich auf die Kurse offline zugreifen?</strong></h2>
-          <p>Derzeit sind unsere Kurse nur online verfügbar. Wir arbeiten daran, in Zukunft einen Offline-Zugang zu ermöglichen.</p>
+          <h2><strong>Sind die Kurse kostenlos?</strong></h2>
+          <p>Alle Kurse sind kostenlos.</p>
         </v-col>
         <v-col cols="12">
           <h2><strong>Wie kann ich mein Passwort zurücksetzen?</strong></h2>
           <p>Sie können Ihr Passwort zurücksetzen, indem Sie auf der Anmeldeseite auf den Link 'Passwort vergessen' klicken und den Anweisungen folgen.</p>
+        </v-col>
+        <v-col cols="12">
+          <h2><strong>Kann ich auf die Kurse offline zugreifen?</strong></h2>
+          <p>Derzeit sind unsere Kurse nur online verfügbar. Wir arbeiten daran, in Zukunft einen Offline-Zugang zu ermöglichen.</p>
         </v-col>
         <v-col cols="12">
           <h2><strong>Wie kann ich den Support kontaktieren?</strong></h2>

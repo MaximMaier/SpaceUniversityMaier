@@ -5,7 +5,7 @@
       <v-list-item>
         <template v-if="!mini">
           <v-list-item-icon>
-            <v-icon>fa-archway</v-icon>
+            <v-img src="@/assets/img/logo-grey.png" contain height="30" width="30"></v-img>
           </v-list-item-icon>
           <v-list-item-content>
             <v-list-item-title class="title">
