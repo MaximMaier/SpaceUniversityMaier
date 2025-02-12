@@ -5,6 +5,7 @@
             <br/>
             <p>Hier können Sie mögliche Bugs in der Website melden oder generelles Feedback abliefern.</p>
             <p>Wir versuchen Ihr Ticket so schnell wie möglich zu bearbeiten und werden Ihnen dann Rückmeldung geben!</p>
+            <p>Bitte prüfe Sie vor dem Einreichen eines Tickets, ob der von Ihnen gefundene Fehler bereits in dem Bugtracker gelistet ist. Nutzen Sie dafür am besten die Suchleiste.</p>
             <p>Bitte geben Sie so viele Details wie möglich an, damit wir das Problem effizient nachvollziehen und beheben können.</p>
             <p>Vielen Dank für Ihre Unterstützung und Ihr Verständnis.</p>
             <button @click="openPopup" style="background-color: #090091;">Ticket erstellen</button>
@@ -12,6 +13,19 @@
         <div class="right">
             <h2>Nicht abgeschlossene Tickets</h2>
             <div class="table-container">
+                <v-container style="padding-bottom: 10px;">
+                    <v-row>
+                        <v-col cols="12" class="d-flex justify-end">
+                            <v-text-field
+                                v-model="search"
+                                append-icon="mdi-magnify"
+                                label="Suche nach Tickets..."
+                                single-line
+                                hide-details
+                            ></v-text-field>
+                        </v-col>
+                    </v-row>
+                </v-container>
                 <table>
                     <thead>
                         <tr>
@@ -77,6 +91,7 @@
                         <textarea id="description" v-model="bug.description" required></textarea>
                     </div>
                     <div>
+                        <p style="color: #bc3e3e;">Bitte gehen Sie sicher, dass der Bug den Sie melden wollen, nicht schon bereits im Bugtracker gelistet ist!</p>
                         <label>Ticketnummer:</label>
                         <p>{{ ticketNumber }}</p>
                     </div>
@@ -102,6 +117,7 @@ export default {
         return {
             showPopup: false,
             showConfirmation: false,
+            search: '',
             bug: {
                 ticketType: '',
                 section: '',
@@ -180,6 +196,14 @@ export default {
 .table-container {
     max-height: calc(100vh - 200px);
     overflow: auto;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 button {

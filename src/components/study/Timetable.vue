@@ -1,6 +1,16 @@
 <template>
     <div class="timetable">
-        <h1>Persönlicher Stundenplan</h1>
+        <div class="header">
+            <h1>Persönlicher Stundenplan</h1>
+            <v-text-field
+                v-model="search"
+                append-icon="mdi-magnify"
+                label="Suche nach Terminen..."
+                single-line
+                hide-details
+            ></v-text-field>
+        </div>
+        <br/>
         <table>
             <thead>
                 <tr>
@@ -166,6 +176,7 @@ export default {
                 day: ''
             },
             selectedColor: '#fffacd',
+            search: '',
             timetable: {
                 '08:00': { 'Montag': { course: '', color: '' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: '', color: '' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: '', color: '' } },
                 '09:00': { 'Montag': { course: 'Mathematik 2', color: '#add8e6' }, 'Dienstag': { course: '', color: '' }, 'Mittwoch': { course: 'Physik 1', color: '#ffb6c1' }, 'Donnerstag': { course: '', color: '' }, 'Freitag': { course: 'Chemie 1', color: '#fffacd' } },
@@ -330,5 +341,9 @@ td:hover {
 
 .delete-button:hover {
     background-color: darkred; /* Darker shade for hover */
+}
+.search-bar {
+    margin: 0 auto;
+    text-align: right;
 }
 </style>

@@ -65,4 +65,10 @@ export default {
       a10: 'Sie können Ihre Profilinformationen aktualisieren, indem Sie sich in Ihr Konto einloggen und zum Abschnitt "Profil" navigieren.',
     },
   },
+  aboutTutorial: {
+    name: 'Tutorial',
+  },
+  aboutLogin: {
+    name: 'Login',
+  },
 };
